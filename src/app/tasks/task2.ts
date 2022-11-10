@@ -1,8 +1,8 @@
-const tests = require('./tests');
-const {
+import tests from './tests';
+import {
   isValidExpression,
   evaluateExpression
-} = require('../utils');
+} from '../utils';
 
 tests.forEach(expression => {
   const expressionIsValid = isValidExpression(expression);

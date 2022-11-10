@@ -1,11 +1,11 @@
-const formatExpression = (expression) => {
+const formatExpression = (expression: string) => {
   return expression
     .replaceAll('sin', 'Math.sin')
     .replaceAll('cos', 'Math.cos')
     .replaceAll('tan', 'Math.tan');
 }
 
-const evaluateExpression = (expression) => {
+export const evaluateExpression = (expression: string) => {
   const formattedExpression = formatExpression(expression);
 
   try {
@@ -16,7 +16,7 @@ const evaluateExpression = (expression) => {
   }
 }
 
-const isValidExpression = (expression) => {
+export const isValidExpression = (expression: string) => {
   try {
     evaluateExpression(expression);
     return true;
@@ -24,9 +24,4 @@ const isValidExpression = (expression) => {
   catch(err) {
     return false;
   }
-}
-
-module.exports = {
-  isValidExpression,
-  evaluateExpression
 }
