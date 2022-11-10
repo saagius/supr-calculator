@@ -1,0 +1,17 @@
+header {
+  padding: 5px;
+  display: flex;
+  flex: 1 1 auto;
+  background: black;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+  a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

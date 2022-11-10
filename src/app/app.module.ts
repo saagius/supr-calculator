@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CalculatorModule } from './components/calculator/calculator.module';
 import { SuprCalculatorModule } from './components/suprcalculator/suprcalculator.module';
+import { HeaderModule } from './components/header/header.module';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { SuprCalculatorModule } from './components/suprcalculator/suprcalculator
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HeaderModule,
     CalculatorModule,
     SuprCalculatorModule
   ],
