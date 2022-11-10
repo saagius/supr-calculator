@@ -4,7 +4,8 @@
   "description": "SuprCalculator",
   "main": "index.js",
   "scripts": {
-    "start-task-1": "node tasks/task1.js"
+    "start-task-1": "node tasks/task1.js",
+    "start-task-2": "node tasks/task2.js"
   },
   "repository": {
     "type": "git",
