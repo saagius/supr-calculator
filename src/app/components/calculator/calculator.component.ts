@@ -14,12 +14,6 @@ export class CalculatorComponent {
 
   validExpressions: any[] = [];
 
-  onKeyUpEvent(event: any) {
-    console.log(`Input value: ${event.target.value}`);
-    console.log(`Expression value: ${this.expression}`);
-    this.validateAndEvaluateExpression()
-  }
-
   saveValidExpression = () => {
     const lastValidExpression = this.validExpressions[this.validExpressions.length - 1];
 

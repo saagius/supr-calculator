@@ -32,7 +32,6 @@ export class SuprCalculatorComponent {
   }
 
   addToExpression($event: any) {
-    console.log($event.target.innerHTML);
     this.expression += $event.target.innerHTML;
   }
 

@@ -1,7 +1,7 @@
 <div class="expression-wrapper">
     <div class="expression-input">
         <label>Expression:</label>
-        <input type="text" (keyup)="onKeyUpEvent($event)" [(ngModel)]="expression" />
+        <input type="text" (keyup)="validateAndEvaluateExpression()" [(ngModel)]="expression" />
     </div>
     <div class="expression-info" *ngIf="expressionIsValid && expression.length; else showError">Value: {{ expressionValue }}</div>
     <ng-template #showError>

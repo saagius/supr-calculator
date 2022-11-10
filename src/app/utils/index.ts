@@ -1,15 +1,8 @@
-const formatExpression = (expression: string) => {
-  return expression
-    .replaceAll('sin', 'Math.sin')
-    .replaceAll('cos', 'Math.cos')
-    .replaceAll('tan', 'Math.tan');
-}
+import Fparser from './formulaParser';
 
-export const evaluateExpression = (expression: string) => {
-  const formattedExpression = formatExpression(expression);
-
+export const evaluateExpression = (formula: string) => {
   try {
-    return Function(`'use strict'; return (${ formattedExpression })`)()
+    return Fparser.calc(formula);
   }
   catch(err) {
     throw 'Invalid';
