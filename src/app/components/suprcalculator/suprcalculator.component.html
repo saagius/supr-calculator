@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="result">{{ result }}</div>
+    <div class="expression">{{ expression }}</div>
+    <div class="buttons">
+        <span class="button resetBtn" (click)="reset()">AC</span>
+        <span class="button open operator" (click)="addToExpression($event)">(</span>
+        <span class="button close operator" (click)="addToExpression($event)">)</span>
+        <span class="button operator" (click)="triggerRandomAndAddToExpression()">RAND</span>
+
+        <span class="button cos operator" (click)="addToExpression($event)">cos</span>
+        <span class="button sin operator" (click)="addToExpression($event)">sin</span>
+        <span class="button tan operator" (click)="addToExpression($event)">tan</span>
+        <span class="button operator" (click)="addToExpression($event)">/</span>
+
+        <span class="button number" (click)="addToExpression($event)">7</span>
+        <span class="button number" (click)="addToExpression($event)">8</span>
+        <span class="button number" (click)="addToExpression($event)">9</span>
+        <span class="button operator" (click)="addToExpression($event)">*</span>
+
+        <span class="button number" (click)="addToExpression($event)">4</span>
+        <span class="button number" (click)="addToExpression($event)">5</span>
+        <span class="button number" (click)="addToExpression($event)">6</span>
+        <span class="button operator" (click)="addToExpression($event)">-</span>
+
+        <span class="button number" (click)="addToExpression($event)">1</span>
+        <span class="button number" (click)="addToExpression($event)">2</span>
+        <span class="button number" (click)="addToExpression($event)">3</span>
+        <span class="button operator" (click)="addToExpression($event)">+</span>
+
+        <span class="button number zero-btn" (click)="addToExpression($event)">0</span>
+        <span class="button number dot" (click)="addToExpression($event)">.</span>
+        <span class="button operator" (click)="evaluateExpression()">=</span>
+    </div>
+</div>

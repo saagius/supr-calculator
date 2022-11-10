@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CalculatorModule } from './components/calculator/calculator.module';
+import { SuprCalculatorModule } from './components/suprcalculator/suprcalculator.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { CalculatorModule } from './components/calculator/calculator.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CalculatorModule
+    CalculatorModule,
+    SuprCalculatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
