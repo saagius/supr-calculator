@@ -14,3 +14,5 @@ Then trigger the tasks by using
 
 ### For Task C and D, an angular app was created as a SPA
 Trigger **npm run start** to start building and starting the app
+
+### Tested using Node v16.14.2
