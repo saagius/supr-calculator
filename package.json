@@ -1,0 +1,23 @@
+{
+  "name": "supr-calculator",
+  "version": "1.0.0",
+  "description": "SuprCalculator",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saagius/supr-calculator.git"
+  },
+  "keywords": [
+    "SuprNation",
+    "Calculator"
+  ],
+  "author": "Stephen Agius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saagius/supr-calculator/issues"
+  },
+  "homepage": "https://github.com/saagius/supr-calculator#readme"
+}
