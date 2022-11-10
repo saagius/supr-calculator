@@ -1,0 +1,17 @@
+.expression-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+
+  .expression-input {
+    input {
+      margin-left: 5px;
+    }
+  }
+
+  .last-valid-expressions {
+    margin: 10px 0 0;
+    list-style: lower-alpha;
+    padding: 0 0 0 15px;
+  }
+}

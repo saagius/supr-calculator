@@ -1,0 +1,15 @@
+<div class="expression-wrapper">
+    <div class="expression-input">
+        <label>Expression:</label>
+        <input type="text" (keyup)="onKeyUpEvent($event)" [(ngModel)]="expression" />
+    </div>
+    <div class="expression-info" *ngIf="expressionIsValid && expression.length; else showError">Value: {{ expressionValue }}</div>
+    <ng-template #showError>
+        <div class="expression-error" *ngIf="expression.length">
+            Expression is invalid
+        </div>
+    </ng-template>
+    <ul class="last-valid-expressions">
+        <li *ngFor="let validExpression of validExpressions">Expression: {{ validExpression.expression }} - Result: {{ validExpression.value }}</li>
+    </ul>
+</div>
