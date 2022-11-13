@@ -1,0 +1,15 @@
+enum TokenType {
+  PLUS = 'PLUS',
+  MINUS = 'MINUS',
+  MULTIPLY = 'MULTIPLY',
+  DIVISION = 'DIVISION',
+  INTEGER = 'INTEGER',
+  OPEN_PARENTHESIS = 'OPEN_PARENTHESIS',
+  CLOSE_PARENTHESIS = 'CLOSE_PARENTHESIS',
+  SIN = 'SIN',
+  COS = 'COS',
+  TAN = 'TAN',
+  EOF = 'EOF'
+}
+
+export default TokenType;

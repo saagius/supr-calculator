@@ -1,8 +1,12 @@
-import Fparser from './formulaParser';
+import { Tokeniser } from './tokeniser';
+import Parser from './parser';
 
 export const evaluateExpression = (formula: string) => {
+  const tokeniser = new Tokeniser();
+  const tokens = tokeniser.tokenise(formula);
+  const parser = new Parser(tokens);
   try {
-    return Fparser.calc(formula);
+    return parser.evaluate();
   }
   catch(err) {
     throw 'Invalid';
@@ -10,8 +14,12 @@ export const evaluateExpression = (formula: string) => {
 }
 
 export const isValidExpression = (expression: string) => {
+  const tokeniser = new Tokeniser();
+  const tokens = tokeniser.tokenise(expression);
+
+  const parser = new Parser(tokens);
   try {
-    evaluateExpression(expression);
+    parser.parse();
     return true;
   }
   catch(err) {
